@@ -22,13 +22,6 @@ public class LzbBranchTest {
     private static ThreadPoolExecutor threadPool = new ThreadPoolExecutor(1,5,5,TimeUnit.SECONDS,new LinkedBlockingQueue<>());
 
     public static void main(String[] args) {
-//        for (int i = 0; i < 100000000; i++) {
-//            threadPool.execute(()->{
-//                local.set(new LocalVariable());
-//                System.out.println("local variable");		// 改点东西
-//            });
-//        }
-
         String str1 = new String("abcd");
         String str2 = str1.intern();
 
